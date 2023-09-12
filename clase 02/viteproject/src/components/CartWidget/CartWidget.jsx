@@ -1,10 +1,11 @@
-import carrito from '../../assets/carrito.png'
+import {BsCart} from 'react-icons/bs'
+import { Badge } from '@mui/material'
 
 const CartWidget = () => {
     return (
-        <div>
-            <img src={carrito} />
-        </div>
+        <Badge color='secondary' badgeContent={4} >
+            <BsCart size={25} />
+        </Badge>
     )
 }
 

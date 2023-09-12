@@ -1,13 +1,18 @@
-import './styles.css'
+/* eslint-disable react/prop-types */
+import "./styles.css";
+import { Button } from '@mui/material';
 
-const ItemListContainer = () => {
+
+
+const ItemListContainer = ({router, handleConsole}) => {
 
   return (
-    <div className='container'>
-      <p>Home</p>
-      <p>Catalogo</p>
-      <p>Contacto</p>
-      <p>Ayuda</p>
+    <div className="container">
+      {router.map((ruta) => (
+        <p key={ruta}>{ruta}</p>
+      ))}
+
+      <Button variant="outlined" onClick={()=> handleConsole()}> Consologiame </Button>
     </div>
   );
 };
