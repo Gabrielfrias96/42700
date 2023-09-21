@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Item = ({ id, nombre, precio, descripcion, imgUrl }) => {
   return (
     <div>
@@ -5,7 +7,7 @@ const Item = ({ id, nombre, precio, descripcion, imgUrl }) => {
       <h1>{nombre}</h1>
       <p>{descripcion}</p>
       <p>{precio}</p>
-      <button>Añadir al Carrito</button>
+      <Link to={`/product/${id}`}>Ver detalle</Link>
     </div>
   );
 };
