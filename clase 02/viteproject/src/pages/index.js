@@ -1,3 +1,4 @@
-export { default as HomePage } from './Home'
-export { default as ItemDetailPage } from './ItemDetail'
+export { default as ItemListContainer } from './Home'
+export { default as ItemDetailContainer } from './ItemDetail'
 export { default as CheckoutPage } from './Checkout'
+export { default as CartPage } from './Cart'

@@ -5,7 +5,7 @@ export const productos = [
       precio: 799.99,
       categoria: "Teléfonos",
       stock: 10,
-      descripcion: "El último smartphone de Samsung con pantalla AMOLED y cámara de alta resolución."
+      descripcion: "El último smartphone de Samsung con pantalla AMOLED y cámara de alta resolución.",
     },
     {
       id: 1,

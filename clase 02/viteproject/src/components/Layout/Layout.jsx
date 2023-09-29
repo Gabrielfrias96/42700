@@ -1,6 +1,7 @@
+import React from "react"
 import Navbar from "../Navbar/Navbar"
 
-const Layout = ({children})=> {
+const Layout = React.memo(({children})=> {
  return (
     <>
     <Navbar />
@@ -9,6 +10,6 @@ const Layout = ({children})=> {
     </div>
     </>
  )
-}
+})
 
 export default Layout
